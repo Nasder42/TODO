@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TODO.Views.MainPage" xmlns:local="clr-namespace:TODO">
+    <ContentPage.Content>
+        <Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="{x:Static local:SharedResources.BkColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="weatherCelsius" Clicked="ShowWeather" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" FontAttributes="Bold" FontSize="15" Text="Weather" BackgroundColor="Gray" TextColor="Black" />
+            <Button x:Name="btnNew" Clicked="AddNewTodo" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="0" Text="New Goal" BackgroundColor="{x:Static local:SharedResources.ButtonBkColor}" TextColor="Black" FontSize="15" BorderRadius="0" />
+            <Button Text="Back" Clicked="BackPeriodGoals" FontSize="10" Grid.Row="1" Grid.Column="0" BackgroundColor="{x:Static local:SharedResources.LabelBkColor}" TextColor="{x:Static local:SharedResources.LabelTextColor}" />
+            <Label x:Name="periodTitle" Text="{Binding Intro}" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1" FontAttributes="Bold" FontSize="20" BackgroundColor="{x:Static local:SharedResources.LabelBkColor}" TextColor="{x:Static local:SharedResources.LabelTextColor}" HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center" LineBreakMode="NoWrap" />
+            <Button Text="Next" Clicked="NextPeriodGoals" FontSize="10" Grid.Row="1" Grid.Column="3" BackgroundColor="{x:Static local:SharedResources.LabelBkColor}" TextColor="{x:Static local:SharedResources.LabelTextColor}" />
+            <ListView x:Name="goalsListView" ItemsSource="{Binding Todos}" Grid.Row="2" Grid.RowSpan="4" Grid.ColumnSpan="4" HorizontalOptions="Center" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Clicked="OnEdit" CommandParameter="{Binding Id}" Text="Edit" />
+                                <MenuItem Clicked="OnCompleted" CommandParameter="{Binding Id}" Text="Completed" />
+                                <MenuItem Clicked="OnRemove" CommandParameter="{Binding Id}" Text="Remove" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="15,0">
+                                <Label Text="{Binding Title}" TextColor="{x:Static local:SharedResources.TextCellColor}" />
+                                <Label Text="{Binding Text}" TextColor="{x:Static local:SharedResources.TextDetailColor}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Clicked="ShowCompletedTodo" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Text="Completed Goals" BackgroundColor="Gray" TextColor="Black" FontSize="15" BorderRadius="0" />
+            <Button Clicked="ShowFutureTodo" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="5" Text="Future Goals" BackgroundColor="{x:Static local:SharedResources.ButtonBkColor}" TextColor="Black" FontSize="15" BorderRadius="0" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

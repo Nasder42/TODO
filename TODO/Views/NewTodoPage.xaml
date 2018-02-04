@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TODO.Views.NewTodoPage" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:local="clr-namespace:TODO">
+    <Grid Padding="5,0" RowSpacing="1" ColumnSpacing="1" BackgroundColor="{x:Static local:SharedResources.BkColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="New Goal" FontSize="25" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" VerticalTextAlignment="Center" TextColor="{x:Static local:SharedResources.LabelTextColor}" />
+        <Label Text="Title" Grid.Row="1" FontSize="17" Grid.Column="1" VerticalTextAlignment="Center" TextColor="{x:Static local:SharedResources.LabelTextColor}">
+        </Label>
+        <Entry x:Name="titleEntry" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand" Placeholder="Write the goal title here" Grid.Row="2">
+        </Entry>
+        <Label Text="Text" Grid.Row="3" FontSize="20" Grid.Column="1" VerticalTextAlignment="Center" TextColor="{x:Static local:SharedResources.LabelTextColor}">
+        </Label>
+        <Entry x:Name="textEntry" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand" Placeholder="Write the goal description here" Grid.Row="4">
+        </Entry>
+        <Label Text="Planned final date" FontSize="17" Grid.Row="5" Grid.Column="1" VerticalTextAlignment="Center" TextColor="{x:Static local:SharedResources.LabelTextColor}" />
+        <DatePicker x:Name="datePlannedPicker" Grid.Column="1" VerticalOptions="CenterAndExpand" Date="{x:Static sys:DateTime.Now}" Grid.Row="6">
+            <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+        </DatePicker>
+        <Button Text="Add Goal" Clicked="AddNewTodo" Grid.Column="1" Grid.Row="7" VerticalOptions="Center">
+        </Button>
+    </Grid>
+</ContentPage>

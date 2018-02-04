@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{6DF32BFC-0AA8-48C2-938F-541F485174C0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TODO/App.cs">
+    <Files>
+      <File FileName="TODO/TODO.cs" Line="11" Column="1" />
+      <File FileName="TODO/App.cs" Line="23" Column="9" />
+      <File FileName="TODO/Views/MainPage.xaml" Line="10" Column="35" />
+      <File FileName="TODO/Views/MainPage.xaml.cs" Line="10" Column="34" />
+      <File FileName="TODO/obj/Debug/TODO.Views.MainPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="TODO/Models/WeekTodoVM.cs" Line="20" Column="92" />
+      <File FileName="TODO/Data/TodoItemDatabase.cs" Line="108" Column="16" />
+      <File FileName="TODO/Models/TodoItem.cs" Line="14" Column="9" />
+      <File FileName="Droid/MainActivity.cs" Line="26" Column="1" />
+      <File FileName="TODO/Style/SharedResources.cs" Line="23" Column="27" />
+      <File FileName="TODO/Models/QuarterTodoVM.cs" Line="15" Column="1" />
+      <File FileName="TODO/Views/NewTodoPage.xaml" Line="33" Column="15" />
+      <File FileName="TODO/Views/NewTodoPage.xaml.cs" Line="32" Column="41" />
+      <File FileName="TODO/Views/ArchivedTodoPage.xaml" Line="13" Column="15" />
+      <File FileName="TODO/Views/ArchivedTodoPage.xaml.cs" Line="16" Column="73" />
+      <File FileName="TODO/Models/CompletedTodoVM.cs" Line="14" Column="98" />
+      <File FileName="TODO/Views/FutureTodoPage.xaml" Line="14" Column="1" />
+      <File FileName="TODO/Views/FutureTodoPage.xaml.cs" Line="14" Column="35" />
+      <File FileName="TODO/Models/FutureTodoVM.cs" Line="15" Column="6" />
+      <File FileName="TODO/Data/WeatherApi.cs" Line="47" Column="1" />
+      <File FileName="TODO/Models/Weather.cs" Line="27" Column="1" />
+      <File FileName="TODO/Views/WeatherPage.xaml" Line="91" Column="15" />
+      <File FileName="TODO/Views/WeatherPage.xaml.cs" Line="30" Column="1" />
+      <File FileName="TODO/Views/GoalsPreviewPage.xaml" Line="6" Column="1" />
+      <File FileName="TODO/Views/GoalsPreviewPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="TODO/Models/GoalsPreviewVM.cs" Line="17" Column="1" />
+      <File FileName="TODO/Views/TestPage.xaml" Line="3" Column="26" />
+      <File FileName="TODO/Views/TestPage.xaml.cs" Line="17" Column="10" />
+      <File FileName="TODO/obj/Debug/TODO.Views.TestPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="TODO/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="TODO/packages.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/Sander/Projects/2018/Xamarin/SchoolProjects/TODO/TODO/Views/MainPage.xaml" relfile="TODO/Views/MainPage.xaml" line="33" column="1" />
+      <Breakpoint file="/Users/Sander/Projects/2018/Xamarin/SchoolProjects/TODO/TODO/Views/TestPage.xaml.cs" relfile="TODO/Views/TestPage.xaml.cs" line="43" column="10" />
+      <Breakpoint file="/Users/Sander/Projects/2018/Xamarin/SchoolProjects/TODO/TODO/Views/TestPage.xaml.cs" relfile="TODO/Views/TestPage.xaml.cs" line="37" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TODO.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>

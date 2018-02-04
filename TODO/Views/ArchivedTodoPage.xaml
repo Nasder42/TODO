@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TODO.Views.ArchivedTodoPage" xmlns:local="clr-namespace:TODO">
+    <StackLayout>
+        <ListView x:Name="completedList" ItemsSource="{Binding Todos}" Header="{Binding Intro}" Footer="{Binding Summary}" HorizontalOptions="Center" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}" Detail="{Binding Text}" TextColor="{x:Static local:SharedResources.TextCellColor}" DetailColor="{x:Static local:SharedResources.TextDetailColor}" Height="10">
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
